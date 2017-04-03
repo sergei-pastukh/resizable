@@ -12,7 +12,7 @@
     "container",
     "lightweight"
   ],
-  "main": "src/resizable.js",
+  "main": "resizable.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
