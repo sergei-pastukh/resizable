@@ -1,6 +1,6 @@
 {
-  "name": "angular-resizable",
-  "version": "1.2.0",
+  "name": "resizable",
+  "version": "1.3.0",
   "description": "A directive for creating resizable containers in angular.",
   "keywords": [
     "angular",
@@ -12,20 +12,20 @@
     "container",
     "lightweight"
   ],
-  "main": "src/angular-resizable.js",
+  "main": "src/resizable.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Reklino/angular-resizable.git"
+    "url": "https://github.com/sergei-pastukh/resizable.git"
   },
-  "author": "Reklino",
+  "author": "SergeiPastukh",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Reklino/angular-resizable/issues"
+    "url": "https://github.com/sergei-pastukh/resizable/issues"
   },
-  "homepage": "https://github.com/Reklino/angular-resizable",
+  "homepage": "https://github.com/sergei-pastukh/resizable",
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-minify-css": "^1.1.1",

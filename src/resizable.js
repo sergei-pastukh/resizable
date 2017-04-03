@@ -1,4 +1,4 @@
-angular.module('angularResizable', [])
+angular.module('resizable', [])
     .directive('resizable', function() {
         var toCall;
         function throttle(fun) {
@@ -84,7 +84,7 @@ angular.module('angularResizable', [])
                     }
                     updateInfo(e);
                     function resizingEmit(){
-                        scope.$emit('angular-resizable.resizing', info);
+                        scope.$emit('resizable.resizing', info);
                     }
                     if (scope.rNoThrottle) {
                         resizingEmit();
@@ -94,7 +94,7 @@ angular.module('angularResizable', [])
                 };
                 var dragEnd = function(e) {
                     updateInfo();
-                    scope.$emit('angular-resizable.resizeEnd', info);
+                    scope.$emit('resizable.resizeEnd', info);
                     scope.$apply();
                     document.removeEventListener('mouseup', dragEnd, false);
                     document.removeEventListener('mousemove', dragging, false);
@@ -120,7 +120,7 @@ angular.module('angularResizable', [])
                     e.returnValue = false;
 
                     updateInfo(e);
-                    scope.$emit('angular-resizable.resizeStart', info);
+                    scope.$emit('resizable.resizeStart', info);
                     scope.$apply();
                 };
 
